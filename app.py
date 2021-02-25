@@ -33,7 +33,10 @@ def selectpath():
 root = Tk()
 root.title('Youtube Video Downloader')
 root.geometry('600x450')
-root.iconbitmap('(ICON PATH)') ## PUT YOUR ICON PATH HERE
+#root.iconbitmap('(ICON PATH)') ## PUT YOUR ICON PATH HERE
+                                        #OR
+#root.iconbitmap('icon.ico') ## PUT YOUR ICON PATH HERE
+
 root.columnconfigure(0, weight=1)
 
 #Canva config

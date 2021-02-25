@@ -6,6 +6,7 @@ import os
 
 path_list = []
 
+#Defining the function of downloading and selecting the path
 def download_video():
     url = URLEntry.get()
     ytURL = YouTube(url)
@@ -32,10 +33,10 @@ def selectpath():
 root = Tk()
 root.title('Youtube Video Downloader')
 root.geometry('600x450')
-root.iconbitmap('C:/Users/pedro/Envs/YoutubeDownloader/icon.ico')
+root.iconbitmap('(ICON PATH)') ## PUT YOUR ICON PATH HERE
 root.columnconfigure(0, weight=1)
 
-#Canva configure
+#Canva config
 rootCanva = Canvas(root, bg='Light Grey')
 rootCanva.place(relwidth=1.0, relheight=1.0)
 

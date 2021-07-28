@@ -13,12 +13,8 @@ def download_video():
     finalYTURL = ytURL.streams.get_highest_resolution()
     try:
         finalYTURL.download(path_list[0])
-        #DownloadLabel = Label(text=finalYTURL.title, fg='green', )
-        #DownloadLabel.grid()
         showwarning(message='The download was a sucessful!')
     except:
-        #FailDownloaadLabel = Label(text='Download failed! Please check the infos', fg='red')
-        #FailDownloaadLabel.grid()
         showwarning(message='The download failed! Please check the input infos.')
 def selectpath():
     path = filedialog.askdirectory()
@@ -33,10 +29,7 @@ def selectpath():
 root = Tk()
 root.title('Youtube Video Downloader')
 root.geometry('600x450')
-#root.iconbitmap('(ICON PATH)') ## PUT YOUR ICON PATH HERE
-                                        #OR
-#root.iconbitmap('icon.ico') ## PUT YOUR ICON PATH HERE
-
+#root.iconbitmap('icon.ico') ## PUT YOUR ICON PATH HERE OR USE THE DEFAULT ICON IN THE CODE FOLDER
 root.columnconfigure(0, weight=1)
 
 #Canva config
